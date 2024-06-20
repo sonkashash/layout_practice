@@ -1,0 +1,143 @@
+:root {
+    --blue: #489DFF;
+    --light-grey: #F3F3F3;
+}
+
+@font-face {
+    font-family: Poppins;
+    src: url(./assets/fonts/Poppins/Poppins-Light.ttf);
+}
+
+@font-face {
+    font-family: "Poppins Bold";
+    src: url(./assets/fonts/Poppins/Poppins-SemiBold.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Poppins;
+}
+
+button:hover,
+a {
+    cursor: pointer;
+}
+
+p {
+    cursor: default;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    text-align: center;
+    padding-inline: 24px;
+    padding-block: 20px;
+    position: relative;
+}
+
+main {
+    padding-inline: 24px;
+    padding-top: 20px;
+    padding-bottom: 25px;
+}
+
+.title {
+    line-height: 1.2;
+    font-size: 30px;
+    margin-bottom: 12px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.card {
+    padding-top: 32px;
+    padding-bottom: 16px;
+    margin-bottom: 24px;
+}
+
+.card>*:not(.card__img) {
+    margin-left: 10px;
+}
+
+.card__img {
+    width: 260px;
+    height: 260px;
+    overflow: hidden;
+    position: relative;
+}
+
+.card__img>img {
+    position: absolute;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.card__price {
+    margin-bottom: 16px;
+    font-size: 16px;
+    color: var(--blue);
+    line-height: 1.5;
+}
+
+.card__name {
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+.card__button {
+    width: 130px;
+    height: 48px;
+    background-color: var(--blue);
+    color: white;
+    font-family: "Poppins Bold";
+    border: none;
+    border-radius: 10px;
+}
+
+footer {
+    padding: 24px;
+    text-align: center;
+    position: relative;
+}
+
+.rights,
+.contacts {
+    font-size: 12px;
+    line-height: 20px;
+    margin: 15px;
+}
+
+.contacts__email {
+    color: var(--blue);
+}
+
+.social-icons>* {
+    margin-right: 8px;
+}
+
+.line-border {
+    height: 1px;
+    background-color: var(--light-grey);
+    width: 100%;
+}
+
+header>.line-border {
+    position: absolute;
+    bottom: 0;
+}
+
+footer>.line-border {
+    position: absolute;
+    top: 0;
+}
